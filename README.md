@@ -13,6 +13,7 @@
 - HTML
 - CSS
 - JavaScript
+- TypeScript
 - React
 - Next
 - SASS
