@@ -21,7 +21,7 @@
 
 ## 🚧 Projeto
 
-Live Preview: Em breve
+Live Preview: https://ignews-joaod3v.vercel.app
 
 ## 🎨 Layout:
 
