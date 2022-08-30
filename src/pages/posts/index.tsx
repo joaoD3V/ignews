@@ -9,7 +9,7 @@ import Link from 'next/link';
 import { useSession } from 'next-auth/client';
 import { useEffect, useState } from 'react';
 
-type Post = {
+export type Post = {
   slug: string;
   title: string;
   excerpt: string;
@@ -40,8 +40,8 @@ export default function Posts({ posts }: PostsProps) {
       <main className={styles.container}>
         <div className={styles.posts}>
           { posts.map(post => (
-            <Link href={canAccess ? `/posts/${post.slug}` : `/posts/preview/${post.slug}`}>
-              <a key={post.slug}>
+            <Link key={post.slug} href={canAccess ? `/posts/${post.slug}` : `/posts/preview/${post.slug}`}>
+              <a>
                 <time>{post.updatedAt}</time>
                 <strong>{post.title}</strong>
                 <p>{post.excerpt}</p>
